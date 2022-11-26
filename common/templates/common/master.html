@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}{% endblock %}</title>
+</head>
+<body>
+<div style="float:left;background-color:bisque;width:100%">
+<img src="{% static 'images/schoollogo.jpg'%}" style="width:70px"/>
+<h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BHARATHIYA VIDHYA BHAVAN</h1>
+<div style="float:right">
+<a href="{% url 'common:index' %}"><b>Home</b></a>&nbsp;&nbsp;
+<a href="{% url 'about:index' %}"><b>About Us</b></a>&nbsp;&nbsp;
+<a href="{% url 'contact:index' %}"><b>Contact Us</b></a>
+</div>
+</div>
+{% block content %}{% endblock %}
+<div width="100%" style="background-color:rgb(218, 113, 230)">
+    <h1>Contact Us</h1><br/>
+    <b>Bharatiya Vidhya Bhavan</b><br/>
+    <b>Ramanattukara</b><br/>
+    <b>Kozhikode</b><br/>
+    <b>Phone:025567467</b><br/>
+    <b>Email:bhavans234@gmail.com</b>
+</div>
+</body>
+</html>
