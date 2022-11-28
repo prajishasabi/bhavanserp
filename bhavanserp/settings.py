@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-vwt$^v+8op!y3a*%8q@^89%ihn=wpxbpzmq0&f6epgo*ya$_e-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -52,6 +52,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
+
 ]
 
 ROOT_URLCONF = 'bhavanserp.urls'

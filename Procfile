@@ -1,0 +1,1 @@
+web: gunicorn bhavanserp.wsgi --log-file -
